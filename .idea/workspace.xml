@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="578bd60b-876e-4342-8910-74193d3e9134" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/controllers/BookingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/dto/BookingDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/entities/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/repositories/BookingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/services/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/controllers/FlightController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/dto/FlightDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/entities/Flight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/repositories/FlightRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/services/FlightService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="578bd60b-876e-4342-8910-74193d3e9134" name="Changes" comment="Change gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +149,26 @@
       <workItem from="1728443950570" duration="1647000" />
       <workItem from="1728504817574" duration="6890000" />
       <workItem from="1728516535284" duration="1351000" />
+      <workItem from="1728613311802" duration="488000" />
+      <workItem from="1729110210099" duration="606000" />
     </task>
+    <task id="LOCAL-00001" summary="Add functionality to services">
+      <option name="closed" value="true" />
+      <created>1728613458448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728613458448</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Change gitignore">
+      <option name="closed" value="true" />
+      <created>1729110489556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729110489556</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,10 +179,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add functionality to services" />
+    <MESSAGE value="Change gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change gitignore" />
   </component>
 </project>
