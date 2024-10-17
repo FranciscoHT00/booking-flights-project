@@ -43,6 +43,10 @@ public class FlightService {
         return flightRepository.findById(id).map(this::mapToDTO);
     }
 
+    public Optional<FlightDTO> findFlightByFlightNumber(String flightNumber) {
+        return flightRepository.findByFlightNumber(flightNumber).map(this::mapToDTO);
+    }
+
     public Optional<FlightDTO> updateFlightById(FlightDTO flightDTO, UUID id) {
 
         Optional<Flight> optional = flightRepository.findById(id);

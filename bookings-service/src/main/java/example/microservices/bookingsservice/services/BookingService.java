@@ -2,8 +2,11 @@ package example.microservices.bookingsservice.services;
 
 import example.microservices.bookingsservice.dto.BookingDTO;
 import example.microservices.bookingsservice.entities.Booking;
+import example.microservices.bookingsservice.feign.FlightsClient;
 import example.microservices.bookingsservice.repositories.BookingRepository;
+import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,18 +19,29 @@ import java.util.stream.StreamSupport;
 public class BookingService {
 
     private final BookingRepository bookingRepository;
+    private final FlightsClient flightsClient;
 
     @Autowired
-    public BookingService(BookingRepository bookingRepository) {
+    public BookingService(BookingRepository bookingRepository, FlightsClient flightsClient) {
         this.bookingRepository = bookingRepository;
+        this.flightsClient = flightsClient;
     }
 
-    public BookingDTO createBooking(BookingDTO bookingDTO) {
+    public Optional<BookingDTO> createBooking(BookingDTO bookingDTO) {
 
-        Booking booking = mapToEntity(bookingDTO);
-        Booking savedBooking = bookingRepository.save(booking);
-        bookingDTO = mapToDTO(savedBooking);
-        return bookingDTO;
+        try{
+            ResponseEntity<?> response = flightsClient.getFlightByFlightNumber(bookingDTO.getFlightNumber());
+            if(response.getStatusCode().is2xxSuccessful()) {
+                Booking booking = mapToEntity(bookingDTO);
+                Booking savedBooking = bookingRepository.save(booking);
+                bookingDTO = mapToDTO(savedBooking);
+                return Optional.of(bookingDTO);
+            }else {
+                return Optional.empty();
+            }
+        }catch (FeignException.NotFound e){
+            return Optional.empty();
+        }
     }
 
     public List<BookingDTO> findAllBookings() {

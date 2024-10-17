@@ -23,8 +23,9 @@ public class BookingController {
 
     @PostMapping
     public ResponseEntity<BookingDTO> createBooking(@RequestBody BookingDTO bookingDTO) {
-        BookingDTO createdBooking = bookingService.createBooking(bookingDTO);
-        return ResponseEntity.ok(createdBooking);
+        Optional<BookingDTO> createdBooking = bookingService.createBooking(bookingDTO);
+        return createdBooking.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @GetMapping

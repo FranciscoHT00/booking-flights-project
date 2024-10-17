@@ -40,6 +40,13 @@ public class FlightController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
+    @GetMapping("/findByNumber/{flightNumber}")
+    public ResponseEntity<FlightDTO> getFlightByFlightNumber(@PathVariable String flightNumber) {
+        Optional<FlightDTO> flightDTO = flightService.findFlightByFlightNumber(flightNumber);
+        return flightDTO.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity<FlightDTO> updateFlight(@RequestBody FlightDTO flightDTO, @PathVariable UUID id) {
         Optional<FlightDTO> updatedFlight = flightService.updateFlightById(flightDTO, id);
