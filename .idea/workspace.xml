@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="578bd60b-876e-4342-8910-74193d3e9134" name="Changes" comment="Add OpenFeign functionality">
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/dto/FlightDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/feign/FlightsClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookings-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/BookingsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/BookingsServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/controllers/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/controllers/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/services/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/services/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flights-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flights-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/controllers/FlightController.java" beforeDir="false" afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/controllers/FlightController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/repositories/FlightRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/repositories/FlightRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/services/FlightService.java" beforeDir="false" afterPath="$PROJECT_DIR$/flights-service/src/main/java/example/microservices/flightsservice/services/FlightService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,35 +53,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;Database detector&quot;,
-    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BookingsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.FlightsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
+    "Notification.DoNotAsk-Database detector": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.BookingsServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.FlightsServiceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Clases Unimag/Microservicios/microservices-project/products",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -109,6 +103,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BookingsServiceApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.microservices.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookingsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="DB_PASSWORD" value="Asereje12300" />
@@ -142,6 +143,7 @@
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.BookingsServiceApplication" />
       <item itemvalue="Spring Boot.FlightsServiceApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -168,7 +170,10 @@
       <workItem from="1728516535284" duration="1351000" />
       <workItem from="1728613311802" duration="488000" />
       <workItem from="1729110210099" duration="8068000" />
-      <workItem from="1729120926452" duration="2914000" />
+      <workItem from="1729120926452" duration="5222000" />
+      <workItem from="1729713690334" duration="847000" />
+      <workItem from="1729714572946" duration="198000" />
+      <workItem from="1729714866756" duration="1824000" />
     </task>
     <task id="LOCAL-00001" summary="Add functionality to services">
       <option name="closed" value="true" />
@@ -194,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729110897992</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add OpenFeign functionality">
+      <option name="closed" value="true" />
+      <created>1729124018339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729124018339</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
