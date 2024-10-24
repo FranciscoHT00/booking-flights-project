@@ -21,34 +21,34 @@ public class BookingController {
         this.bookingService = bookingService;
     }
 
-    @PostMapping
+    @PostMapping("/user")
     public ResponseEntity<BookingDTO> createBooking(@RequestBody BookingDTO bookingDTO) {
         Optional<BookingDTO> createdBooking = bookingService.createBooking(bookingDTO);
         return createdBooking.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @GetMapping
+    @GetMapping("/admin")
     public ResponseEntity<List<BookingDTO>> getAllBookings() {
         List<BookingDTO> bookings = bookingService.findAllBookings();
         return ResponseEntity.ok(bookings);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/user/{id}")
     public ResponseEntity<BookingDTO> getBookingById(@PathVariable UUID id) {
         Optional<BookingDTO> bookingDTO = bookingService.findBookingById(id);
         return bookingDTO.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/user/{id}")
     public ResponseEntity<BookingDTO> updateBooking(@RequestBody BookingDTO bookingDTO, @PathVariable UUID id) {
         Optional<BookingDTO> updatedBooking = bookingService.updateBookingById(bookingDTO, id);
         return updatedBooking.map(ResponseEntity::ok)
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/admin/{id}")
     public ResponseEntity<Void> deleteBooking(@PathVariable UUID id) {
         if (bookingService.deleteBookingById(id)) {
             return ResponseEntity.ok().build();

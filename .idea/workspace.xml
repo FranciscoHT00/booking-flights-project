@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="578bd60b-876e-4342-8910-74193d3e9134" name="Changes" comment="Add OpenFeign functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="578bd60b-876e-4342-8910-74193d3e9134" name="Changes" comment="Add API Gateway">
+      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/configs/KeycloakRoleConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookings-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/controllers/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/controllers/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookings-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.compose.yaml: Compose Deployment.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
     "Notification.DoNotAsk-Database detector": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -71,7 +76,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Clases Unimag/Microservicios/microservices-project/products",
+    "last_opened_file_path": "C:/Clases Unimag/Microservicios/booking-flights-project/bookings-service/src/main/java/example/microservices/bookingsservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,6 +93,10 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Clases Unimag\Microservicios\booking-flights-project\bookings-service\src\main\java\example\microservices\bookingsservice" />
+      <recent name="C:\Clases Unimag\Microservicios\booking-flights-project" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="example.microservices.bookingsservice.dto" />
     </key>
@@ -102,7 +111,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BookingsServiceApplication">
+  <component name="RunManager" selected="Docker.compose.yaml: Compose Deployment">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="example.microservices.apigateway.ApiGatewayApplication" />
@@ -139,12 +148,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.compose.yaml: Compose Deployment" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.BookingsServiceApplication" />
       <item itemvalue="Spring Boot.FlightsServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -173,7 +200,9 @@
       <workItem from="1729120926452" duration="5222000" />
       <workItem from="1729713690334" duration="847000" />
       <workItem from="1729714572946" duration="198000" />
-      <workItem from="1729714866756" duration="1824000" />
+      <workItem from="1729714866756" duration="2492000" />
+      <workItem from="1729726301164" duration="1344000" />
+      <workItem from="1729728208945" duration="5436000" />
     </task>
     <task id="LOCAL-00001" summary="Add functionality to services">
       <option name="closed" value="true" />
@@ -207,7 +236,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729124018339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add API Gateway">
+      <option name="closed" value="true" />
+      <created>1729716787598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729716787598</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add API Gateway">
+      <option name="closed" value="true" />
+      <created>1729716812215</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729716812215</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +285,7 @@
     <MESSAGE value="Add functionality to services" />
     <MESSAGE value="Change gitignore" />
     <MESSAGE value="Add OpenFeign functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add OpenFeign functionality" />
+    <MESSAGE value="Add API Gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add API Gateway" />
   </component>
 </project>
