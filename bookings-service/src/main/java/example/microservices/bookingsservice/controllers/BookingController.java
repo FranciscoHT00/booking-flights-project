@@ -28,7 +28,7 @@ public class BookingController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/admin")
+    @GetMapping("/admin/getAll")
     public ResponseEntity<List<BookingDTO>> getAllBookings() {
         List<BookingDTO> bookings = bookingService.findAllBookings();
         return ResponseEntity.ok(bookings);

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="578bd60b-876e-4342-8910-74193d3e9134" name="Changes" comment="Add API Gateway">
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/configs/KeycloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/configs/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+    <list default="true" id="578bd60b-876e-4342-8910-74193d3e9134" name="Changes" comment="Add Keycloak to Bookings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookings-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/controllers/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/src/main/java/example/microservices/bookingsservice/controllers/BookingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookings-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bookings-service/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -60,6 +56,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.compose.yaml: Compose Deployment.executor": "Run",
+    "HTTP Request.All in generated-requests.executor": "Run",
+    "HTTP Request.generated-requests | #2.executor": "Run",
     "Notification.DisplayName-DoNotAsk-Database detector": "Database detector",
     "Notification.DoNotAsk-Database detector": "true",
     "RequestMappingsPanelOrder0": "0",
@@ -110,8 +108,19 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
   </component>
-  <component name="RunManager" selected="Docker.compose.yaml: Compose Deployment">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #2">
+    <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="example.microservices.apigateway.ApiGatewayApplication" />
@@ -149,7 +158,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -162,6 +173,8 @@
     </configuration>
     <list>
       <item itemvalue="Docker.compose.yaml: Compose Deployment" />
+      <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="HTTP Request.All in generated-requests" />
       <item itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item itemvalue="Spring Boot.BookingsServiceApplication" />
       <item itemvalue="Spring Boot.FlightsServiceApplication" />
@@ -169,7 +182,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="Docker.compose.yaml: Compose Deployment" />
+        <item itemvalue="HTTP Request.All in generated-requests" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +217,9 @@
       <workItem from="1729714572946" duration="198000" />
       <workItem from="1729714866756" duration="2492000" />
       <workItem from="1729726301164" duration="1344000" />
-      <workItem from="1729728208945" duration="5436000" />
+      <workItem from="1729728208945" duration="5695000" />
+      <workItem from="1729736745563" duration="1580000" />
+      <workItem from="1729738965753" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="Add functionality to services">
       <option name="closed" value="true" />
@@ -252,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729716812215</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add Keycloak to Bookings">
+      <option name="closed" value="true" />
+      <created>1729735394816</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729735394816</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +311,7 @@
     <MESSAGE value="Change gitignore" />
     <MESSAGE value="Add OpenFeign functionality" />
     <MESSAGE value="Add API Gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add API Gateway" />
+    <MESSAGE value="Add Keycloak to Bookings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Keycloak to Bookings" />
   </component>
 </project>
